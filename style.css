@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Thêm box-sizing để kiểm soát kích thước */
+}
+
+/* Header */
+#header{
+    display: flex;
+    justify-content: space-between; /* Căn đều logo và navbar */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 20px;
+    background-color: brown;
+}
+
+.header_logo{
+    width: 170px;
+    height: 80px;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li{
+    color: white;
+    display: inline-table;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    text-align: center; /* Căn giữa nội dung */
+}
+
+#navbar li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hiệu ứng hover cho các mục navbar */
+#navbar li:hover{
+    color: black;
+    background-color: bisque;
+}
+
+/* Sub-menu */
+#navbar li > .sub-menu{
+    display: none;
+    position: absolute;
+    background-color: brown; /* Nền của sub-menu */
+    top: 100%; /* Đặt sub-menu ngay dưới mục cha */
+    left: 0;
+}
+
+#navbar li:hover .sub-menu{
+    display: block;
+}
+
+#navbar li .sub-menu li {
+    width: 100%;
+    height: auto;
+    line-height: normal;
+}
+
+/* Giỏ hàng */
+#lg-bag {
+    margin-left: auto; /* Đẩy giỏ hàng về phía bên phải */
+}
+
+#lg-bag a {
+    color: white;
+}
+
+/* Style icon giỏ hàng */
+#lg-bag i {
+    font-size: 24px;
+}
